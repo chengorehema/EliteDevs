@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+  ol{
+    @apply text-white;
+    @apply bg-red-300;
+  }
+  li{
+    @apply text-red-50;
+    @apply bg-gray-500;
+  }
+
+  h2{
+    @apply text-red-700 font-mono font-bold underline border-spacing-1;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
