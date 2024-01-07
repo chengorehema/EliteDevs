@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer base {
+  html{
+    color: green;
+    background-color: aqua;
+    /* font-family: 'Bungee Spice', sans-serif; */
+  }
+  main {
+    font-family: 'Bungee Spice', sans-serif;
+  }
   ol{
     @apply text-white;
     @apply bg-red-300;
@@ -10,33 +20,15 @@
   li{
     @apply text-red-50;
     @apply bg-gray-500;
+    font-size: 50px;
+    font-weight: 900;
   }
 
   h2{
     @apply text-red-700 font-mono font-bold underline border-spacing-1;
+    background-color: red;
   }
-}
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  a {
+    @apply grid grid-cols-3 hover:text-yellow-200 underline;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
